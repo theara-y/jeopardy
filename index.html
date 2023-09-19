@@ -3,61 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeopardy!</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <link href="https://fonts.cdnfonts.com/css/itc-korinna-std" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <!-- <div id="game-ui">
-            <img src="./jeopardy_logo.png">
-            <button>S T A R T</button>
-            <div id="info">
-                <div>Theara Ya</div>
-                <div>Powered by jservice.io</div>
-            </div>
-        </div> -->
-        <!-- <div id="game-board"></div> -->
-        <!-- <div id="game-board">
-            <div class="game-tile-header"><div id="col1-header" class="game-tile-text">Category 1</div></div>
-            <div class="game-tile-header"><div id="col2-header" class="game-tile-text">Category 2</div></div>
-            <div class="game-tile-header"><div id="col3-header" class="game-tile-text">Category 3</div></div>
-            <div class="game-tile-header"><div id="col4-header" class="game-tile-text">Category 4</div></div>
-            <div class="game-tile-header"><div id="col5-header" class="game-tile-text">Category 5</div></div>
-            <div class="game-tile-header"><div id="col6-header" class="game-tile-text">Category 6</div></div>
-            <div data-y="0" data-x="0" class="game-tile"><div id="col0-row0" class="game-tile-text"></div></div>
-            <div data-y="1" data-x="0" class="game-tile"><div id="col1-row0" class="game-tile-text"></div></div>
-            <div data-y="2" data-x="0" class="game-tile"><div id="col2-row0" class="game-tile-text"></div></div>
-            <div data-y="3" data-x="0" class="game-tile"><div id="col3-row0" class="game-tile-text"></div></div>
-            <div data-y="4" data-x="0" class="game-tile"><div id="col4-row0" class="game-tile-text"></div></div>
-            <div data-y="5" data-x="0" class="game-tile"><div id="col5-row0" class="game-tile-text"></div></div>
-            <div data-y="0" data-x="1" class="game-tile"><div id="col0-row1" class="game-tile-text"></div></div>
-            <div data-y="1" data-x="1" class="game-tile"><div id="col1-row1" class="game-tile-text"></div></div>
-            <div data-y="2" data-x="1" class="game-tile"><div id="col2-row1" class="game-tile-text"></div></div>
-            <div data-y="3" data-x="1" class="game-tile"><div id="col3-row1" class="game-tile-text"></div></div>
-            <div data-y="4" data-x="1" class="game-tile"><div id="col4-row1" class="game-tile-text"></div></div>
-            <div data-y="5" data-x="1" class="game-tile"><div id="col5-row1" class="game-tile-text"></div></div>
-            <div data-y="0" data-x="2" class="game-tile"><div id="col0-row2" class="game-tile-text"></div></div>
-            <div data-y="1" data-x="2" class="game-tile"><div id="col1-row2" class="game-tile-text"></div></div>
-            <div data-y="2" data-x="2" class="game-tile"><div id="col2-row2" class="game-tile-text"></div></div>
-            <div data-y="3" data-x="2" class="game-tile"><div id="col3-row2" class="game-tile-text"></div></div>
-            <div data-y="4" data-x="2" class="game-tile"><div id="col4-row2" class="game-tile-text"></div></div>
-            <div data-y="5" data-x="2" class="game-tile"><div id="col5-row2" class="game-tile-text"></div></div>
-            <div data-y="0" data-x="3" class="game-tile"><div id="col0-row3" class="game-tile-text"></div></div>
-            <div data-y="1" data-x="3" class="game-tile"><div id="col1-row3" class="game-tile-text"></div></div>
-            <div data-y="2" data-x="3" class="game-tile"><div id="col2-row3" class="game-tile-text"></div></div>
-            <div data-y="3" data-x="3" class="game-tile"><div id="col3-row3" class="game-tile-text"></div></div>
-            <div data-y="4" data-x="3" class="game-tile"><div id="col4-row3" class="game-tile-text"></div></div>
-            <div data-y="5" data-x="3" class="game-tile"><div id="col5-row3" class="game-tile-text"></div></div>
-            <div data-y="0" data-x="4" class="game-tile"><div id="col0-row4" class="game-tile-text"></div></div>
-            <div data-y="1" data-x="4" class="game-tile"><div id="col1-row4" class="game-tile-text"></div></div>
-            <div data-y="2" data-x="4" class="game-tile"><div id="col2-row4" class="game-tile-text"></div></div>
-            <div data-y="3" data-x="4" class="game-tile"><div id="col3-row4" class="game-tile-text"></div></div>
-            <div data-y="4" data-x="4" class="game-tile"><div id="col4-row4" class="game-tile-text"></div></div>
-            <div data-y="5" data-x="4" class="game-tile"><div id="col5-row4" class="game-tile-text"></div></div>
-        </div>
-        <div id="expanded-game-tile"><div id="expanded-game-tile-text">Clue #1 $200</div></div> -->
-    </div>
+    <div id="app"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.js" integrity="sha512-kFoMebJcPxdfDstjuwbbJN3q7hQ6O6npC9exDmbTR7HZZUC50s7DKl/MJSiukySAolVrcVmaLRHTmRjwnGCFow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/lodash"></script>

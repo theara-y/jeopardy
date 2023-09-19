@@ -1,6 +1,6 @@
 import { randomIntInclusive } from './Utils.js';
 
-const url = 'http://jservice.io/'
+const url = 'https://jservice.io/'
 const MIN_ID = 2;
 const MAX_ID = 28163;
 
