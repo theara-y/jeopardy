@@ -1,11 +1,3 @@
-export function displayLoadingIndicator() {
-    $('#app').append($('<div id="loading-indicator"><div>'))
-}
-
-export function removeLoadingIndicator() {
-    $('#loading-indicator').remove();
-}
-
 export async function displayGameBoard(categories, gameRound) {
     displayTiles(6, 5);
     await displayHeaders(categories)
@@ -61,6 +53,7 @@ function displayValues(nCategories, nCluesPerCategory, gameRound) {
 }
 
 export function displayStartScreen() {
+    $('#app').html('');
     $('#app').append(
         $(`
             <div id="game-ui">

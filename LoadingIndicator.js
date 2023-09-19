@@ -6,17 +6,13 @@ export default function useLoadingIndicator(initialValue) {
     }
 
     function toggleLoading() {
-        busy = !busy
-
-        busy ? displayLoadingIndicator() : removeLoadingIndicator();
+        busy = !busy;
+        render();
     }
 
-    function displayLoadingIndicator() {
-        $('#app').append($('<div id="loading-indicator"><div>'))
-    }
-    
-    function removeLoadingIndicator() {
-        $('#loading-indicator').remove();
+    function render() {
+        console.log('rendering');
+        busy ? $('#app').append($('<div id="loading-indicator"><div>')) : $('#loading-indicator').remove();
     }
 
     return [isLoading, toggleLoading];
